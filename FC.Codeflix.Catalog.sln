@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B97EC8E0-65A6-4EC4-9F6C-43FE23A3ADC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E1C7FAAC-A85C-4027-BBDE-9D19451798C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.UnitTests", "tests\FC.Codeflix.Catalog.UnitTests\FC.Codeflix.Catalog.UnitTests.csproj", "{87E479A7-7F53-46F7-953A-2CBF7D71DD36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Domain", "src\FC.Codeflix.Catalog.Domain\FC.Codeflix.Catalog.Domain.csproj", "{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Application", "src\FC.Codeflix.Catalog.Application\FC.Codeflix.Catalog.Application.csproj", "{5E872A41-C23D-459D-8250-70FEED675CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87E479A7-7F53-46F7-953A-2CBF7D71DD36} = {E1C7FAAC-A85C-4027-BBDE-9D19451798C6}
+		{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14} = {B97EC8E0-65A6-4EC4-9F6C-43FE23A3ADC5}
+		{5E872A41-C23D-459D-8250-70FEED675CE2} = {B97EC8E0-65A6-4EC4-9F6C-43FE23A3ADC5}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E479A7-7F53-46F7-953A-2CBF7D71DD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E479A7-7F53-46F7-953A-2CBF7D71DD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E479A7-7F53-46F7-953A-2CBF7D71DD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E479A7-7F53-46F7-953A-2CBF7D71DD36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E872A41-C23D-459D-8250-70FEED675CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E872A41-C23D-459D-8250-70FEED675CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E872A41-C23D-459D-8250-70FEED675CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E872A41-C23D-459D-8250-70FEED675CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
