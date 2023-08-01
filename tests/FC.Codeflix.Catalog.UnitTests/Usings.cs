@@ -11,3 +11,4 @@ global using FC.Codeflix.Catalog.UnitTests.Common;
 global using FC.Codeflix.Catalog.Application.UseCases.Category.CreateCategory;
 global using FC.Codeflix.Catalog.Application.UseCases.Category.GetCategory;
 global using FC.Codeflix.Catalog.Application.Exception;
+global using FC.Codeflix.Catalog.Application.UseCases.Category.DeleteCategory;
