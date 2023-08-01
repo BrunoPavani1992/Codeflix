@@ -9,3 +9,5 @@ global using FC.Codeflix.Catalog.Application.Interfaces;
 global using FC.Codeflix.Catalog.Domain.Repository;
 global using FC.Codeflix.Catalog.UnitTests.Common;
 global using FC.Codeflix.Catalog.Application.UseCases.Category.CreateCategory;
+global using FC.Codeflix.Catalog.Application.UseCases.Category.GetCategory;
+global using FC.Codeflix.Catalog.Application.Exception;

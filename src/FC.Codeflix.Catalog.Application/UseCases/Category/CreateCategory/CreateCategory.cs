@@ -14,26 +14,20 @@ public class CreateCategory : ICreateCategory
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<CreateCategoryOutput> Handle(
+    public async Task<CategoryModelOutput> Handle(
         CreateCategoryInput input,
         CancellationToken cancellationToken
     )
     {
         var category = new DomainEntity.Category(
             input.Name,
-            input.Description,
+            input.Description ?? "",
             input.IsActive
         );
 
         await _categoryRepository.Insert(category, cancellationToken);
         await _unitOfWork.Commit(cancellationToken);
 
-        return new CreateCategoryOutput(
-            category.Id,
-            category.Name,
-            category.Description,
-            category.IsActive,
-            category.CreatedAt
-        );
+        return CategoryModelOutput.FromCategory(category);
     }
 }

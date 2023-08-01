@@ -10,4 +10,9 @@
       <ProjectReference Include="..\FC.Codeflix.Catalog.Domain\FC.Codeflix.Catalog.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.6.0" />
+      <PackageReference Include="MediatR" Version="12.1.1" />
+    </ItemGroup>
+
 </Project>
