@@ -5,3 +5,5 @@ global using MediatR;
 global using FC.Codeflix.Catalog.Application.UseCases.Category.Common;
 global using System.Globalization;
 global using FluentValidation;
+global using FC.Codeflix.Catalog.Domain.SeedWork.SearchableRepository;
+global using FC.Codeflix.Catalog.Application.Common;

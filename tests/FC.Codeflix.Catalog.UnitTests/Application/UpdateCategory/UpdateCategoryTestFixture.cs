@@ -1,21 +1,25 @@
-﻿namespace FC.Codeflix.Catalog.UnitTests.Application.CreateCategory;
+﻿namespace FC.Codeflix.Catalog.UnitTests.Application.UpdateCategory;
 
-public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
+public class UpdateCategoryTestFixture : CategoryUseCasesBaseFixture
 {
-    public CreateCategoryInput GetValidInput() =>
-        new(GetValidCategoryName(),
+    public UpdateCategoryInput GetValidInput(
+        Guid? id = null
+    ) =>
+        new(
+            id ?? Guid.NewGuid(),
+            GetValidCategoryName(),
             GetValidCategoryDescription(),
             GetRandomBoolean()
         );
-
-    public CreateCategoryInput GetInvalidInputShortName()
+    
+    public UpdateCategoryInput GetInvalidInputShortName()
     {
         var result = GetValidInput();
         result.Name = result.Name[..2];
         return result;
     }
-
-    public CreateCategoryInput GetInvalidInputTooLongName()
+    
+    public UpdateCategoryInput GetInvalidInputTooLongName()
     {
         var result = GetValidInput();
         var tooLongName = Faker.Commerce.ProductName();
@@ -25,14 +29,7 @@ public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
         return result;
     }
 
-    public CreateCategoryInput GetInvalidInputDescriptionNull()
-    {
-        var result = GetValidInput();
-        result.Description = null;
-        return result;
-    }
-
-    public CreateCategoryInput GetInvalidInputTooLongDescription()
+    public UpdateCategoryInput GetInvalidInputTooLongDescription()
     {
         var result = GetValidInput();
         var tooLongDescription = Faker.Commerce.ProductDescription();
@@ -43,7 +40,7 @@ public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
     }
 }
 
-[CollectionDefinition(nameof(CreateCategoryTestFixture))]
-public class CreateCategoryTestFixtureCollection : ICollectionFixture<CreateCategoryTestFixture>
+[CollectionDefinition(nameof(UpdateCategoryTestFixture))]
+public class UpdateCategoryTestFixtureCollection : ICollectionFixture<UpdateCategoryTestFixture>
 {
 }

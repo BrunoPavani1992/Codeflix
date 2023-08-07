@@ -1,6 +1,7 @@
 ﻿namespace FC.Codeflix.Catalog.Domain.SeedWork;
 
 public interface IGenericRepository<TAggregate> : IRepository
+    where TAggregate : AggregateRoot
 {
     public Task Insert(
         TAggregate aggregate,
@@ -13,6 +14,11 @@ public interface IGenericRepository<TAggregate> : IRepository
     );
     
     public Task Delete(
+        TAggregate aggregate,
+        CancellationToken cancellationToken
+    );
+    
+    public Task Update(
         TAggregate aggregate,
         CancellationToken cancellationToken
     );
