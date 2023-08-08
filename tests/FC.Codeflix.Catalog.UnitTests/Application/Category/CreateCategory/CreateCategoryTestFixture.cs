@@ -1,25 +1,21 @@
-﻿namespace FC.Codeflix.Catalog.UnitTests.Application.UpdateCategory;
+﻿namespace FC.Codeflix.Catalog.UnitTests.Application.Category.CreateCategory;
 
-public class UpdateCategoryTestFixture : CategoryUseCasesBaseFixture
+public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
 {
-    public UpdateCategoryInput GetValidInput(
-        Guid? id = null
-    ) =>
-        new(
-            id ?? Guid.NewGuid(),
-            GetValidCategoryName(),
+    public CreateCategoryInput GetValidInput() =>
+        new(GetValidCategoryName(),
             GetValidCategoryDescription(),
             GetRandomBoolean()
         );
-    
-    public UpdateCategoryInput GetInvalidInputShortName()
+
+    public CreateCategoryInput GetInvalidInputShortName()
     {
         var result = GetValidInput();
         result.Name = result.Name[..2];
         return result;
     }
-    
-    public UpdateCategoryInput GetInvalidInputTooLongName()
+
+    public CreateCategoryInput GetInvalidInputTooLongName()
     {
         var result = GetValidInput();
         var tooLongName = Faker.Commerce.ProductName();
@@ -29,7 +25,14 @@ public class UpdateCategoryTestFixture : CategoryUseCasesBaseFixture
         return result;
     }
 
-    public UpdateCategoryInput GetInvalidInputTooLongDescription()
+    public CreateCategoryInput GetInvalidInputDescriptionNull()
+    {
+        var result = GetValidInput();
+        result.Description = null;
+        return result;
+    }
+
+    public CreateCategoryInput GetInvalidInputTooLongDescription()
     {
         var result = GetValidInput();
         var tooLongDescription = Faker.Commerce.ProductDescription();
@@ -40,7 +43,7 @@ public class UpdateCategoryTestFixture : CategoryUseCasesBaseFixture
     }
 }
 
-[CollectionDefinition(nameof(UpdateCategoryTestFixture))]
-public class UpdateCategoryTestFixtureCollection : ICollectionFixture<UpdateCategoryTestFixture>
+[CollectionDefinition(nameof(CreateCategoryTestFixture))]
+public class CreateCategoryTestFixtureCollection : ICollectionFixture<CreateCategoryTestFixture>
 {
 }

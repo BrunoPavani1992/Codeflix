@@ -1,4 +1,6 @@
-﻿namespace FC.Codeflix.Catalog.UnitTests.Application.ListCategories;
+﻿using FC.Codeflix.Catalog.UnitTests.Application.Category.Common;
+
+namespace FC.Codeflix.Catalog.UnitTests.Application.Category.ListCategories;
 
 public class ListCategoriesTestFixture : CategoryUseCasesBaseFixture
 {

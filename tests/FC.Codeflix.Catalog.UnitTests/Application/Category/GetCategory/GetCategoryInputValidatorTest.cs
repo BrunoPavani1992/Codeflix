@@ -1,4 +1,4 @@
-﻿namespace FC.Codeflix.Catalog.UnitTests.Application.GetCategory;
+﻿namespace FC.Codeflix.Catalog.UnitTests.Application.Category.GetCategory;
 
 [Collection(nameof(GetCategoryTestFixture))]
 public class GetCategoryInputValidatorTest

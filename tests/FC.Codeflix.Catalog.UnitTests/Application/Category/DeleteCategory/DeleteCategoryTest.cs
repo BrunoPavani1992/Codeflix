@@ -1,6 +1,6 @@
 ﻿using UseCase = FC.Codeflix.Catalog.Application.UseCases.Category.DeleteCategory;
 
-namespace FC.Codeflix.Catalog.UnitTests.Application.DeleteCategory;
+namespace FC.Codeflix.Catalog.UnitTests.Application.Category.DeleteCategory;
 
 [Collection(nameof(DeleteCategoryTestFixture))]
 public class DeleteCategoryTest

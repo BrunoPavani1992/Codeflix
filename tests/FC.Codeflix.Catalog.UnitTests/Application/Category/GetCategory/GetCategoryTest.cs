@@ -1,6 +1,6 @@
 ﻿using UseCase = FC.Codeflix.Catalog.Application.UseCases.Category.GetCategory;
 
-namespace FC.Codeflix.Catalog.UnitTests.Application.GetCategory;
+namespace FC.Codeflix.Catalog.UnitTests.Application.Category.GetCategory;
 
 [Collection(nameof(GetCategoryTestFixture))]
 public class GetCategoryTest

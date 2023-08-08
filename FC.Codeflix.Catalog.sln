@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Application", "src\FC.Codeflix.Catalog.Application\FC.Codeflix.Catalog.Application.csproj", "{5E872A41-C23D-459D-8250-70FEED675CE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.IntegrationTests", "tests\FC.Codeflix.Catalog.IntegrationTests\FC.Codeflix.Catalog.IntegrationTests.csproj", "{F7046B34-1B9B-4F9D-8C3B-37DC97981C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Infra.Data.EF", "src\FC.Codeflix.Catalog.Infra.Data.EF\FC.Codeflix.Catalog.Infra.Data.EF.csproj", "{3D78AF21-76DC-47AD-8B74-51DA08106358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,8 @@ Global
 		{87E479A7-7F53-46F7-953A-2CBF7D71DD36} = {E1C7FAAC-A85C-4027-BBDE-9D19451798C6}
 		{0DD7F568-D42C-4D8D-BB3B-92CF1F68CF14} = {B97EC8E0-65A6-4EC4-9F6C-43FE23A3ADC5}
 		{5E872A41-C23D-459D-8250-70FEED675CE2} = {B97EC8E0-65A6-4EC4-9F6C-43FE23A3ADC5}
+		{F7046B34-1B9B-4F9D-8C3B-37DC97981C6A} = {E1C7FAAC-A85C-4027-BBDE-9D19451798C6}
+		{3D78AF21-76DC-47AD-8B74-51DA08106358} = {B97EC8E0-65A6-4EC4-9F6C-43FE23A3ADC5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{87E479A7-7F53-46F7-953A-2CBF7D71DD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,5 +39,13 @@ Global
 		{5E872A41-C23D-459D-8250-70FEED675CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E872A41-C23D-459D-8250-70FEED675CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E872A41-C23D-459D-8250-70FEED675CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7046B34-1B9B-4F9D-8C3B-37DC97981C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7046B34-1B9B-4F9D-8C3B-37DC97981C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7046B34-1B9B-4F9D-8C3B-37DC97981C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7046B34-1B9B-4F9D-8C3B-37DC97981C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D78AF21-76DC-47AD-8B74-51DA08106358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D78AF21-76DC-47AD-8B74-51DA08106358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D78AF21-76DC-47AD-8B74-51DA08106358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D78AF21-76DC-47AD-8B74-51DA08106358}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

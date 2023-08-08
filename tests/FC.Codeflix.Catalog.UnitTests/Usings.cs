@@ -15,4 +15,4 @@ global using FC.Codeflix.Catalog.Application.UseCases.Category.DeleteCategory;
 global using FC.Codeflix.Catalog.Application.UseCases.Category.UpdateCategory;
 global using FC.Codeflix.Catalog.Domain.SeedWork.SearchableRepository;
 global using FC.Codeflix.Catalog.Application.UseCases.Category.ListCategories;
-global using FC.Codeflix.Catalog.UnitTests.Application.Common;
+global using FC.Codeflix.Catalog.UnitTests.Application.Category.Common;

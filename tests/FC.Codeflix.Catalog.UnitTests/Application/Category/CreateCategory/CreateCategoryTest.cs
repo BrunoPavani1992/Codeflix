@@ -1,7 +1,6 @@
-﻿using FC.Codeflix.Catalog.UnitTests.Domain.Entity.Category;
-using UseCases = FC.Codeflix.Catalog.Application.UseCases.Category.CreateCategory;
+﻿using UseCases = FC.Codeflix.Catalog.Application.UseCases.Category.CreateCategory;
 
-namespace FC.Codeflix.Catalog.UnitTests.Application.CreateCategory;
+namespace FC.Codeflix.Catalog.UnitTests.Application.Category.CreateCategory;
 
 [Collection(nameof(CreateCategoryTestFixture))]
 public class CreateCategoryTest

@@ -1,10 +1,7 @@
-﻿namespace FC.Codeflix.Catalog.UnitTests.Application.Common;
+﻿namespace FC.Codeflix.Catalog.IntegrationTests.Infra.Data.EF.UnitOfWork;
 
-public abstract class CategoryUseCasesBaseFixture : BaseFixture
+public class UnitOfWorkTestFixture : BaseFixture
 {
-    public Mock<ICategoryRepository> GetRepositoryMock() => new();
-    public Mock<IUnitOfWork> GetUnitOfWorkMock() => new();
-    
     protected string GetValidCategoryName()
     {
         var categoryName = "";
@@ -29,11 +26,22 @@ public abstract class CategoryUseCasesBaseFixture : BaseFixture
     }
 
     protected static bool GetRandomBoolean() => new Random().NextDouble() < 0.5;
-    
-    public DomainEntity.Category GetValidCategory()
-        => new(
+
+    public Category GetValidCategory() =>
+        new(
             GetValidCategoryName(),
             GetValidCategoryDescription(),
             GetRandomBoolean()
         );
+
+    public List<Category> GetValidCategoriesList(
+        int length = 10
+    ) =>
+        Enumerable.Range(1, length).Select(_ => GetValidCategory()).ToList();
+}
+
+[CollectionDefinition(nameof(UnitOfWorkTestFixture))]
+public class UnitOfWorkTestFixtureCollection : ICollectionFixture<UnitOfWorkTestFixture>
+{
+    
 }

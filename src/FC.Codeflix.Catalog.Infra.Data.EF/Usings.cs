@@ -1,0 +1,9 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using FC.Codeflix.Catalog.Domain.Entity;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using FC.Codeflix.Catalog.Infra.Data.EF.Configurations;
+global using System.Reflection;
+global using FC.Codeflix.Catalog.Domain.Repository;
+global using FC.Codeflix.Catalog.Domain.SeedWork.SearchableRepository;
+global using FC.Codeflix.Catalog.Application.Exception;
+global using FC.Codeflix.Catalog.Application.Interfaces;
