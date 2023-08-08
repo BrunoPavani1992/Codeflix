@@ -22,7 +22,7 @@ public class UpdateCategoryTest
     )]
     public async Task UpdateCategory(
         DomainEntity.Category exampleCategory,
-        UseCase.UpdateCategoryInput input
+        UpdateCategoryInput input
     )
     {
         var repositoryMock = _fixture.GetRepositoryMock();

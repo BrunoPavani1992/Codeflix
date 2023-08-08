@@ -1,8 +1,8 @@
-﻿namespace FC.Codeflix.Catalog.UnitTests.Application.Category.GetCategory;
+﻿namespace FC.Codeflix.Catalog.IntegrationTests.Application.UseCases.Category.GetCategory;
 
 public class GetCategoryTestFixture : CategoryUseCasesBaseFixture
 {
-
+    
 }
 
 [CollectionDefinition(nameof(GetCategoryTestFixture))]
